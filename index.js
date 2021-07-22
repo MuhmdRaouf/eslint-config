@@ -54,7 +54,7 @@ module.exports = {
     ],
     'import/no-mutable-exports': 'error',
     'import/no-unused-modules': 'error',
-    'import/no-commonjs': ['error', { allowRequire: true, allowConditionalRequire: true }],
+    'import/no-commonjs': ['error', { allowRequire: true, allowConditionalRequire: true, allowPrimitiveModules: true }],
     'import/first': 'error',
     'import/no-duplicates': 'error',
     'import/no-namespace': 'error',
