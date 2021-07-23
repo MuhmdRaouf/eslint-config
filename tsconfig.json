@@ -7,7 +7,6 @@
     "allowUnreachableCode": false,               /* Report errors for Unreachable Code. */
     "allowUnusedLabels": false,                  /* Report errors for Unused Labels. */
     "alwaysStrict": true,                        /* Parse in strict mode and emit "use strict" for each source file. */
-    "exactOptionalPropertyTypes": true,          /* Report errors if Optional Property not match Optional Property Types. */
     "noFallthroughCasesInSwitch": true,          /* Report errors for fallthrough cases in switch statement. */
     "noImplicitAny": true,                       /* Raise error on expressions and declarations with an implied 'any' type. */
     "noImplicitOverride": true,                  /* Report errors if 'override' modifier missing when override parent method */
@@ -20,7 +19,6 @@
     "strictFunctionTypes": true,                 /* Enable strict checking of function types. */
     "strictNullChecks": true,                    /* Enable strict null checks. */
     "strictPropertyInitialization": true,        /* Enable strict checking of property initialization in classes. */
-    "useUnknownInCatchVariables": true,          /* Allow changing the type of the variable in a catch clause from `any` to `unknown`. */
 
     /* Module Resolution Options */
     "module": "commonjs",                        /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
