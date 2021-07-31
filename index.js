@@ -18,7 +18,6 @@ module.exports = {
     // eslint
     'camelcase': ['error', { properties: 'always' }],
     'no-console': 'error',
-    'no-nested-ternary': 'error',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'prefer-destructuring': 'error',
 
@@ -78,7 +77,10 @@ module.exports = {
     'import/no-default-export': 'error',
     'import/no-anonymous-default-export': 'error',
 
+    // jest
+    'jest/no-hooks': 'off',
+
     // prettier
-    'prettier/prettier': ['error', require('./.prettierrc')],
+    'prettier/prettier': ['error'],
   },
 };
