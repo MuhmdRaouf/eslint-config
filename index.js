@@ -74,6 +74,6 @@ module.exports = {
     'jest/no-hooks': 'off',
 
     // prettier
-    'prettier/prettier': ['error'],
+    'prettier/prettier': ['error', require('./.prettierrc')],
   },
 };
