@@ -19,7 +19,13 @@ module.exports = {
     'camelcase': ['error', { properties: 'always' }],
     'no-console': 'error',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-    'prefer-destructuring': 'error',
+    'no-restricted-syntax': [
+      'error',
+      {
+        selector: "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        message: 'Unexpected property on console object was called',
+      },
+    ],
 
     // eslint-plugin-import
     'import/no-unresolved': ['error', { commonjs: true }],
@@ -38,11 +44,12 @@ module.exports = {
       'error',
       {
         devDependencies: [
+          '**/*e2e.{ts,tsx,js,jsx}',
           '**/*test.{ts,tsx,js,jsx}',
           '**/*spec.{ts,tsx,js,jsx}',
-          '**/*e2e.{ts,tsx,js,jsx}',
-          '**/e2e/*.{ts,tsx,js,jsx}',
-          '**/__mocks__/*.{ts,tsx,js,jsx}',
+          '**/e2e/**/*.{ts,tsx,js,jsx}',
+          '**/tests/**/*.{ts,tsx,js,jsx}',
+          '**/__mocks__/**/*.{ts,tsx,js,jsx}',
         ],
         optionalDependencies: false,
         peerDependencies: false,
